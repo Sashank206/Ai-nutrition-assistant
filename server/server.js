@@ -11,6 +11,7 @@ const dietRoutes = require("./routes/dietRoutes");
 dotenv.config();
 connectDB();
 const app = express();
+app.use(cors());
 
 // Middleware
 app.use(express.json());
